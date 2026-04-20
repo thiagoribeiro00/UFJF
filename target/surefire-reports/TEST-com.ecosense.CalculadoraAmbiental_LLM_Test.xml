@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.058" tests="51" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Thiago\.m2\repository\org\apache\maven\surefire\surefire-api\3.1.2\surefire-api-3.1.2.jar;C:\Users\Thiago\.m2\repository\org\apache\maven\surefire\surefire-booter\3.1.2\surefire-booter-3.1.2.jar;C:\Users\Thiago\.m2\repository\org\apache\maven\surefire\surefire-extensions-spi\3.1.2\surefire-extensions-spi-3.1.2.jar;C:\Users\Thiago\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.1.2\surefire-logger-api-3.1.2.jar;C:\Users\Thiago\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.1.2\surefire-shared-utils-3.1.2.jar;C:\Users\Thiago\Documents\code\UFJF\INTELIGENCIA_ARTIFICIAL_NA_ENGENHARIA_DE_SOFTWARE\target\test-classes;C:\Users\Thiago\Documents\code\UFJF\INTELIGENCIA_ARTIFICIAL_NA_ENGENHARIA_DE_SOFTWARE\target\classes;C:\Users\Thiago\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.3\junit-jupiter-5.9.3.jar;C:\Users\Thiago\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\Thiago\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Thiago\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\Thiago\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Thiago\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\Thiago\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\Thiago\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\Thiago\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\Thiago\.m2\repository\net\bytebuddy\byte-buddy\1.12.21\byte-buddy-1.12.21.jar;C:\Users\Thiago\.m2\repository\org\apache\maven\surefire\surefire-junit-platform\3.1.2\surefire-junit-platform-3.1.2.jar;C:\Users\Thiago\.m2\repository\org\apache\maven\surefire\common-java5\3.1.2\common-java5-3.1.2.jar;C:\Users\Thiago\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.3\junit-platform-launcher-1.9.3.jar"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter C:\Users\Thiago\AppData\Local\Temp\surefire7641996053675295977 2026-04-20T17-37-37_888-jvmRun1 surefire-20260420173738044_1tmp surefire_0-20260420173738044_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Thiago\Documents\code\UFJF\INTELIGENCIA_ARTIFICIAL_NA_ENGENHARIA_DE_SOFTWARE\target\test-classes;C:\Users\Thiago\Documents\code\UFJF\INTELIGENCIA_ARTIFICIAL_NA_ENGENHARIA_DE_SOFTWARE\target\classes;C:\Users\Thiago\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.3\junit-jupiter-5.9.3.jar;C:\Users\Thiago\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.3\junit-jupiter-api-5.9.3.jar;C:\Users\Thiago\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Thiago\.m2\repository\org\junit\platform\junit-platform-commons\1.9.3\junit-platform-commons-1.9.3.jar;C:\Users\Thiago\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Thiago\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.3\junit-jupiter-params-5.9.3.jar;C:\Users\Thiago\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.3\junit-jupiter-engine-5.9.3.jar;C:\Users\Thiago\.m2\repository\org\junit\platform\junit-platform-engine\1.9.3\junit-platform-engine-1.9.3.jar;C:\Users\Thiago\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\Thiago\.m2\repository\net\bytebuddy\byte-buddy\1.12.21\byte-buddy-1.12.21.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Thiago"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Thiago\Documents\code\UFJF\INTELIGENCIA_ARTIFICIAL_NA_ENGENHARIA_DE_SOFTWARE"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.17+10"/>
+    <property name="user.name" value="Thiago"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.17+10"/>
+    <property name="localRepository" value="C:\Users\Thiago\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\Thiago\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.17"/>
+    <property name="user.dir" value="C:\Users\Thiago\Documents\code\UFJF\INTELIGENCIA_ARTIFICIAL_NA_ENGENHARIA_DE_SOFTWARE"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Users\Thiago\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\Thiago\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Eclipse Adoptium\jdk-17.0.17.10-hotspot\bin;c:\Users\Thiago\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\Thiago\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Users\Thiago\.local\bin;C:\Users\Thiago\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Thiago\AppData\Local\Programs\Python\Python312\;C:\Users\Thiago\AppData\Local\Microsoft\WindowsApps;C:\Users\Thiago\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Thiago\AppData\Local\Programs\Ollama;C:\Users\Thiago\AppData\Local\Programs\Antigravity\bin;C:\Users\Thiago\AppData\Roaming\npm;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\maven\bin;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.15\bin;C:\Program Files\Apache\Maven\apache-maven-3.9.6\bin;C:\Program Files\OpenJDK\jdk-17\bin;C:\Users\Thiago\.local\bin;C:\Users\Thiago\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\Thiago\AppData\Local\Programs\Python\Python312\;C:\Users\Thiago\AppData\Local\Microsoft\WindowsApps;C:\Users\Thiago\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Thiago\AppData\Local\Programs\Ollama;C:\Users\Thiago\AppData\Local\Programs\Antigravity\bin;C:\Users\Thiago\AppData\Roaming\npm;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;c:\Users\Thiago\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.17+10"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testAnomalia_AcimaLimite" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.007"/>
+  <testcase name="testAnomalia_ArrayVazio" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.003"/>
+  <testcase name="testIndice_EnergiaLimiteSuperior" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.002"/>
+  <testcase name="testStress_AQIExtremo" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.001"/>
+  <testcase name="testQualidadeAr_LimiteBoaModerada" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.002"/>
+  <testcase name="testMedia_ValoresGrandes" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.0"/>
+  <testcase name="testIndice_EmpresaExcelente" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.001"/>
+  <testcase name="testAnomalia_NoMeio" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.001"/>
+  <testcase name="testQualidadeAr_Zero" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.001"/>
+  <testcase name="testIndice_EmpresaMedia" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.0"/>
+  <testcase name="testFahrenheitParaCelsius_PontoCongelamento" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.001"/>
+  <testcase name="testStress_ConsumoGrande" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.001"/>
+  <testcase name="testConsumo_CaseInsensitive" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.001"/>
+  <testcase name="testQualidadeAr_LimiteMuitoPerigosa" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.0"/>
+  <testcase name="testQualidadeAr_LimiteModeradaNaoSaudavel" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.001"/>
+  <testcase name="testConsumo_ComEspacos" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.003"/>
+  <testcase name="testFahrenheitParaCelsius_Negativo" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.0"/>
+  <testcase name="testConsumo_DigitalPrecisao" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.0"/>
+  <testcase name="testCelsiusParaFahrenheit_TemperaturaCorporal" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.0"/>
+  <testcase name="testConsumo_AmbosInvalidos" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.003"/>
+  <testcase name="testCelsiusParaFahrenheit_ZeroAbsoluto" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.0"/>
+  <testcase name="testQualidadeAr_DiaPoluido" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.0"/>
+  <testcase name="testCelsiusParaFahrenheit_EbulicaoAgua" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.0"/>
+  <testcase name="testIndice_EmpresaZero" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.001"/>
+  <testcase name="testMedia_TemperaturasSemana" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.0"/>
+  <testcase name="testConsumo_UltrassonicoIndustrial" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.0"/>
+  <testcase name="testConsumo_StringVaziaComEspacos" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.001"/>
+  <testcase name="testQualidadeAr_LimiteNaoSaudavelMuito" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.0"/>
+  <testcase name="testConsumo_MecanicoRural" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.001"/>
+  <testcase name="testMedia_Misturados" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.001"/>
+  <testcase name="testIndice_EmpresaPoluidora" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.001"/>
+  <testcase name="testMedia_DecimaisPrecisos" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.001"/>
+  <testcase name="testStress_MediaMilElementos" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.0"/>
+  <testcase name="testIndice_CarbonoNegativo" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.002"/>
+  <testcase name="testAnomalia_VariacoesPequenas" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.0"/>
+  <testcase name="testConsumo_EletromagneticoResidencial" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.0"/>
+  <testcase name="testIndice_EnergiaNegativa" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.001"/>
+  <testcase name="testConsumo_SemFluxo" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.0"/>
+  <testcase name="testIndice_Decimais" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.002"/>
+  <testcase name="testQualidadeAr_NegativoPequeno" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.0"/>
+  <testcase name="testQualidadeAr_DiaLimpo" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.001"/>
+  <testcase name="testAnomalia_AbaixoLimite" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.0"/>
+  <testcase name="testMedia_SensorTravado" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.001"/>
+  <testcase name="testAnomalia_DoisIguais" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.0"/>
+  <testcase name="testAnomalia_LimiteExato" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.0"/>
+  <testcase name="testAnomalia_ResfriamentoAbrupto" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.0"/>
+  <testcase name="testConsumo_SensorDesconhecidoFallback" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.0"/>
+  <testcase name="testIndice_ReciclagemNegativa" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.001"/>
+  <testcase name="testQualidadeAr_Incendio" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.001"/>
+  <testcase name="testCelsiusParaFahrenheit_Ambiente" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.0"/>
+  <testcase name="testConsumo_DiasNegativos" classname="com.ecosense.CalculadoraAmbiental_LLM_Test" time="0.001"/>
+</testsuite>
