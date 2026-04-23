@@ -26,4 +26,21 @@ Dê permissão ao script de avaliação e execute-o:
 ```bash
 chmod +x evaluator.sh
 ./evaluator.sh
-```
+
+## Resultados
+
+Pytest test/
+![alt text](image.png)
+
+pytest --cov=src tests/ --cov-report=term-missing
+![alt text](docs/image1.png)
+
+mutmut run
+![alt text](docs/image2.png)
+
+mutmut results
+![alt text](docs/image3.png)
+
+
+
+
