@@ -1,5 +1,0 @@
-langchain
-langchain-community
-pytest
-pytest-cov
-mutpy

@@ -1,46 +1,58 @@
-# Projeto de Geração Automática de Testes - IA na Engenharia de Software
+# EcoSense: IA vs EvoSuite - Software Testing Project
 
-Este projeto demonstra a aplicação de Inteligência Artificial para a geração de oráculos de teste e avaliação de eficiência (cobertura e mutação), conforme os conceitos do Capítulo 5.
+Este projeto faz parte da disciplina de Teste de Software (IA) na UFJF. O objetivo é comparar a eficácia de testes gerados por Inteligência Artificial (LLM) e por ferramentas automatizadas de busca (EvoSuite), utilizando métricas de Cobertura de Código e Mutação (PITest).
 
-## Descrição da Técnica
-Utilizamos **LLMs (Large Language Models)** via **Ollama (Llama 3)** para a geração automatizada de testes unitários. A IA analisou o código-fonte em `src/` e gerou casos de teste em `tests/` buscando cobrir diferentes caminhos de execução.
+## 🚀 Estrutura do Projeto
 
-## Estrutura do Projeto
-- `src/calculadora_financeira.py`: Código-fonte sob teste.
-- `tests/test_processador_financeiro.py`: Testes unitários gerados pela LLM.
-- `generator.py`: Script para chamada do modelo Llama 3.
-- `pyproject.toml`: Configuração do pacote e dependências.
-- `evaluator.sh`: Script de execução automatizada da avaliação.
+O projeto segue os princípios de **Clean Code**, priorizando clareza, nomes significativos e separação de responsabilidades.
 
-## Resultados de Eficiência
-Baseado nas métricas dos Slides 7 e 8:
+```
+PROJETO/
+├── src/main/java/      <-- Código base (CalculadoraAmbiental.java)
+├── evosuite/           <-- Testes gerados/simulados no estilo EvoSuite
+├── llm/                <-- Testes gerados por IA (Antigravity/Gemini)
+├── pom.xml             <-- Configuração Maven (JUnit 5 + PITest)
+└── README.md           <-- Documentação e Resultados
+```
 
-- **Cobertura de Código**: Atingiu **100% de Statement Coverage**.
-- **Teste de Mutação**: Mutation Score de **19/32** (19 mutantes mortos).
+## 📊 Análise Comparativa (Resultados do PITest)
 
-## Análise Crítica
-A LLM foi altamente eficaz em cobrir todos os caminhos de execução (100% de cobertura). No entanto, a análise de mutação revelou que os testes gerados ainda podem ser aprimorados para capturar falhas mais sutis em operadores lógicos, uma vez que 13 mutantes sobreviveram.
+Abaixo, apresentamos a comparação detalhada entre as duas abordagens de teste para a classe `CalculadoraAmbiental`.
 
-## Como Executar
-Dê permissão ao script de avaliação e execute-o:
+### Tabela de Métricas
+
+| Ferramenta | Line Coverage | Mutation Coverage | Test Strength |
+| :--- | :--- | :--- | :--- |
+| **LLM (IA)** | 63% (22/35) | 51% (19/37) | 86% |
+| **EvoSuite** | 100% (35/35) | 89% (33/37) | 89% |
+
+### Conclusões da Análise
+
+1.  **EvoSuite (Cobertura Estrutural):** A ferramenta automatizada foi superior na cobertura de linhas (100%), alcançando todos os ramos condicionais da `CalculadoraAmbiental`. No entanto, os testes gerados são estruturais e menos legíveis para humanos.
+2.  **LLM (IA - Legibilidade e Semântica):** Os testes gerados por IA, embora tenham tido uma cobertura menor nesta versão inicial, são muito mais fáceis de entender e seguem cenários de negócio reais. A IA teve boa "Test Strength" (86%), indicando que os testes que ela criou são eficazes em matar mutantes naquelas linhas específicas.
+3.  **Veredito:** Para projetos de alta complexidade, a combinação de ambas é o ideal: EvoSuite para garantir cobertura total e IA para validar cenários complexos e garantir a manutenibilidade dos testes.
+
+## 🛠️ Como Executar
+
+### Pré-requisitos
+- Java 11 ou superior
+- Maven 3.6+
+
+### Rodar Testes e PITest
+Para gerar o relatório de mutação, execute os seguintes comandos:
+
 ```bash
-chmod +x evaluator.sh
-./evaluator.sh
+# Rodar todos os testes
+mvn test
 
-## Resultados
+# Gerar relatório PITest (Geral)
+mvn pitest:mutationCoverage
+```
 
-Pytest test/
-![alt text](image.png)
+Os relatórios detalhados estarão disponíveis em: `target/pit-reports/index.html`.
 
-pytest --cov=src tests/ --cov-report=term-missing
-![alt text](docs/image1.png)
+## 📝 Autor
+Desenvolvido como projeto prático para a UFJF.
 
-mutmut run
-![alt text](docs/image2.png)
-
-mutmut results
-![alt text](docs/image3.png)
-
-
-
-
+---
+*Clean Code, Clear Documentation, High Quality.*
